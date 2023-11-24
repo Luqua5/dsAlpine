@@ -123,23 +123,23 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="relative z-50 w-10 h-10 flex items-center" @click="showSearchInput = !showSearchInput">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </div>
                 <div
-                    class="absolute z-50 inset-0 bg-white flex justify-center mr-12"
+                    class="md:absolute z-50 md:inset-0 bg-white flex justify-center mt-2 md:mt-0 md:mr-12"
                     x-show="showSearchInput"
                     x-transition
                 >
                     <form class="w-full lg:col-span-5 lg:pt-2">
                         <div class="flex gap-x-4">
                             <label for="search-input" class="sr-only">Your search</label>
-                            <input id="search-input" name="search" type="search" autocomplete="email" required="" class="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your search&hellip;">
+                            <input id="search-input" name="search" type="search" autocomplete="email" required="" class="min-w-0 w-full md:flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your search&hellip;">
                             <button type="submit" class="flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold bg-black hover:bg-yellow-400 text-yellow-400 hover:text-black font-bold">Search</button>
                         </div>
                     </form>
-                </div>
-                <div class="relative z-50 w-10 h-10 flex items-center" @click="showSearchInput = !showSearchInput">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
                 </div>
             </div>
         </div>

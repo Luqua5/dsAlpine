@@ -23,7 +23,7 @@ export default function Tabs() {
             let isSelectElement = element.tagName.toLowerCase() === 'select';
             return parseInt(isSelectElement ? element.value : element.dataset.tabId) || 1;
         },
-        get isCurrentTab() {
+        isCurrentTab() {
             return this.currentTab === this.currentTabId;
         }
     };
