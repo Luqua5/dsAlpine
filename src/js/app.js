@@ -1,12 +1,10 @@
 import Alpine from "alpinejs";
-import EditorPreview from "./components/EditorPreview";
-import FlightTable from "./components/FlightTable";
-import Slider from "./components/Slider";
 import Menu from "./components/Menu";
-import Lazy from "./components/Lazy";
-import Tabs from "./components/Tabs";
+import Projet from "./components/Projet";
 import intersect from "@alpinejs/intersect";
 import persist from "@alpinejs/persist";
+import FAQ from "./components/FAQ";
+import Form from "./components/Form";
 
 window.Alpine = Alpine;
 
@@ -20,11 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const {data, start, plugin} = Alpine;
     plugin(intersect);
     plugin(persist);
-    data('EditorPreview', EditorPreview);
-    data('Lazy', Lazy);
-    data('FlightTable', FlightTable);
-    data('Slider', Slider);
     data('Menu', Menu);
-    data('Tabs', Tabs);
+    data('Projet', Projet);
+    data('FAQ', FAQ);
+    data('Form', Form);
     start();
 });
